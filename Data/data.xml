@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Prototype>
+	<Execution>
+	
+		<AutomationPracticeUsingDataSource>
+			<email>rknigh@gmail.com</email>
+			<firstName>Muhammad</firstName>
+			<lastName>Atif</lastName>
+			<password>abc123</password>
+			<address>R-378 Sector 15-A-4</address>
+			<city>Karachi</city>
+			<postalCode>74600</postalCode>
+			<mobileNo>+923232734362</mobileNo>
+			<addressForFuture>i dont know</addressForFuture>
+		</AutomationPracticeUsingDataSource>
+		
+		<AutomationPracticeUsingDataSource>
+			<email>rknight@gmail.com</email>
+			<firstName>Muhammad</firstName>
+			<lastName>Atif</lastName>
+			<password>abc123</password>
+			<address>R-378 Sector 15-A-4</address>
+			<city>Karachi</city>
+			<postalCode>74600</postalCode>
+			<mobileNo>+923232734362</mobileNo>
+			<addressForFuture>i dont know</addressForFuture>
+		</AutomationPracticeUsingDataSource>
+		
+	</Execution>
+</Prototype>
