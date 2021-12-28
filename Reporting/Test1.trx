@@ -1,64 +1,69 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TestRun id="aec8ada1-d437-44bc-98cd-5a5275704b6c" name="Atif@KNIGHT 2021-12-26 21:28:28" runUser="KNIGHT\Atif" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
-  <Times creation="2021-12-26T21:28:28.2670684+05:00" queuing="2021-12-26T21:28:28.2670684+05:00" start="2021-12-26T21:26:17.5839449+05:00" finish="2021-12-26T21:28:28.2940756+05:00" />
-  <TestSettings name="default" id="dc62c696-91ff-4f0d-ba69-41758b434007">
-    <Deployment runDeploymentRoot="Atif_KNIGHT_2021-12-26_21_28_28" />
+<TestRun id="408a7e00-c009-4de5-92f4-94dcf8cd0ce5" name="atiffmuh@CRKRL-ATIFFMUH1 2021-12-28 19:38:43" runUser="TL\atiffmuh" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2021-12-28T19:38:43.4068578+05:00" queuing="2021-12-28T19:38:43.4068578+05:00" start="2021-12-28T19:38:20.1140002+05:00" finish="2021-12-28T19:39:41.1390888+05:00" />
+  <TestSettings name="default" id="4d47f563-d7df-4916-8868-7a8a7576d108">
+    <Deployment runDeploymentRoot="atiffmuh_CRKRL-ATIFFMUH1_2021-12-28_19_38_43" />
   </TestSettings>
   <Results>
-    <UnitTestResult executionId="054a00ea-8ca6-4d5c-8ce1-1013343dee0c" testId="eda28b58-9264-4e7d-b68a-ff1377252515" testName="TC03_SignUp (Data Row 2)" computerName="KNIGHT" duration="00:00:26.9503038" startTime="2021-12-26T21:26:18.0861750+05:00" endTime="2021-12-26T21:28:27.7863435+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="054a00ea-8ca6-4d5c-8ce1-1013343dee0c" />
-    <UnitTestResult executionId="c9398505-bec8-4ab3-ad3d-56be9860e213" testId="f45cc9a7-9d9f-4e51-bb03-cc4915119ffd" testName="TC03_SignUp (Data Row 4)" computerName="KNIGHT" duration="00:00:18.7121388" startTime="2021-12-26T21:26:18.0861750+05:00" endTime="2021-12-26T21:28:27.7863435+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c9398505-bec8-4ab3-ad3d-56be9860e213" />
-    <UnitTestResult executionId="a8a189e1-a139-4984-802d-d54b46d26e37" testId="69ca4373-12dd-490c-90ee-414fd3ff0235" testName="TC03_SignUp (Data Row 1)" computerName="KNIGHT" duration="00:00:26.9339776" startTime="2021-12-26T21:26:18.0861750+05:00" endTime="2021-12-26T21:28:27.7863435+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a8a189e1-a139-4984-802d-d54b46d26e37" />
-    <UnitTestResult executionId="fc79521d-cea7-41cf-b172-83a029a74611" testId="8a1b86d8-634a-45bf-9c69-e41ea63a817d" testName="TC03_SignUp (Data Row 0)" computerName="KNIGHT" duration="00:00:27.7264799" startTime="2021-12-26T21:26:18.0861750+05:00" endTime="2021-12-26T21:28:27.7863435+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fc79521d-cea7-41cf-b172-83a029a74611" />
-    <UnitTestResult executionId="81062d08-a620-4983-be33-9a79cfbc2888" testId="0050818e-ddfc-4b00-883f-13c5defe8aa7" testName="TC03_SignUp (Data Row 3)" computerName="KNIGHT" duration="00:00:16.8261297" startTime="2021-12-26T21:26:18.0861750+05:00" endTime="2021-12-26T21:28:27.7863435+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="81062d08-a620-4983-be33-9a79cfbc2888" />
+    <UnitTestResult executionId="81a6f7b8-8355-4ec1-87c6-3e2f8de8bd2f" testId="0f29ebf7-6c40-4f62-bcc0-ec068d10955b" testName="TC02_SignUp (Data Row 0)" computerName="CRKRL-ATIFFMUH1" duration="00:00:27.8084067" startTime="2021-12-28T19:38:43.3815330+05:00" endTime="2021-12-28T19:39:11.1911505+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="81a6f7b8-8355-4ec1-87c6-3e2f8de8bd2f" />
+    <UnitTestResult executionId="69b16eb4-5abd-45ba-acba-77f4670774ee" testId="da23e95c-1674-447f-baaf-0274abfc6ed4" testName="TC01_SignIn (Data Row 0)" computerName="CRKRL-ATIFFMUH1" duration="00:00:21.8070240" startTime="2021-12-28T19:38:21.2242621+05:00" endTime="2021-12-28T19:38:43.3692609+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="69b16eb4-5abd-45ba-acba-77f4670774ee" />
+    <UnitTestResult executionId="e3545f48-f7ab-4295-baf8-534fe6aae6af" testId="c67998b5-44df-4ade-811f-00f2f5a17fc7" testName="TC01_AddToCart (Data Row 0)" computerName="CRKRL-ATIFFMUH1" duration="00:00:10.1236719" startTime="2021-12-28T19:39:20.7480595+05:00" endTime="2021-12-28T19:39:30.8727796+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e3545f48-f7ab-4295-baf8-534fe6aae6af" />
+    <UnitTestResult executionId="60032d9f-aef5-49d8-9b04-5d79c538bfe3" testId="c6658c29-7c9c-4f1c-8fa6-614018c30d2c" testName="TC01_ContactForm (Data Row 0)" computerName="CRKRL-ATIFFMUH1" duration="00:00:10.2076936" startTime="2021-12-28T19:39:30.8727796+05:00" endTime="2021-12-28T19:39:41.0818152+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="60032d9f-aef5-49d8-9b04-5d79c538bfe3" />
+    <UnitTestResult executionId="65c2c315-09d7-472e-8c1d-8e5e548195cf" testId="1315cfe7-2258-4ddf-8901-b13d3cd1d8f9" testName="TC01_SearchProduct (Data Row 0)" computerName="CRKRL-ATIFFMUH1" duration="00:00:09.5545657" startTime="2021-12-28T19:39:11.1921481+05:00" endTime="2021-12-28T19:39:20.7480595+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="65c2c315-09d7-472e-8c1d-8e5e548195cf" />
   </Results>
   <TestDefinitions>
-    <UnitTest name="TC03_SignUp (Data Row 0)" storage="c:\users\atif\desktop\automationdemo\bin\debug\automationdemo.dll" id="8a1b86d8-634a-45bf-9c69-e41ea63a817d">
+    <UnitTest name="TC01_ContactForm (Data Row 0)" storage="d:\onedrive - constellation homebuilder systems\automation\automationdemo\bin\debug\automationdemo.dll" id="c6658c29-7c9c-4f1c-8fa6-614018c30d2c">
       <TestCategory>
-        <TestCategoryItem TestCategory="CSV" />
-        <TestCategoryItem TestCategory="SignUp" />
+        <TestCategoryItem TestCategory="Positive" />
+        <TestCategoryItem TestCategory="XML" />
+        <TestCategoryItem TestCategory="ContactForm" />
       </TestCategory>
-      <Execution id="fc79521d-cea7-41cf-b172-83a029a74611" />
-      <TestMethod codeBase="C:\Users\Atif\Desktop\AutomationDemo\bin\Debug\AutomationDemo.dll" adapterTypeName="executor://mstestadapter/v2" className="AutomationDemo.PracticeAutomation.SignInSignUp.SignInSignUpPageTestCases" name="TC03_SignUp" />
+      <Execution id="60032d9f-aef5-49d8-9b04-5d79c538bfe3" />
+      <TestMethod codeBase="D:\OneDrive - Constellation HomeBuilder Systems\Automation\AutomationDemo\bin\Debug\AutomationDemo.dll" adapterTypeName="executor://mstestadapter/v2" className="AutomationDemo.PracticeAutomation.Contact.ContactPageTestCases" name="TC01_ContactForm" />
     </UnitTest>
-    <UnitTest name="TC03_SignUp (Data Row 2)" storage="c:\users\atif\desktop\automationdemo\bin\debug\automationdemo.dll" id="eda28b58-9264-4e7d-b68a-ff1377252515">
+    <UnitTest name="TC01_AddToCart (Data Row 0)" storage="d:\onedrive - constellation homebuilder systems\automation\automationdemo\bin\debug\automationdemo.dll" id="c67998b5-44df-4ade-811f-00f2f5a17fc7">
       <TestCategory>
-        <TestCategoryItem TestCategory="CSV" />
-        <TestCategoryItem TestCategory="SignUp" />
+        <TestCategoryItem TestCategory="Positive" />
+        <TestCategoryItem TestCategory="XML" />
+        <TestCategoryItem TestCategory="AddToCart" />
       </TestCategory>
-      <Execution id="054a00ea-8ca6-4d5c-8ce1-1013343dee0c" />
-      <TestMethod codeBase="C:\Users\Atif\Desktop\AutomationDemo\bin\Debug\AutomationDemo.dll" adapterTypeName="executor://mstestadapter/v2" className="AutomationDemo.PracticeAutomation.SignInSignUp.SignInSignUpPageTestCases" name="TC03_SignUp" />
+      <Execution id="e3545f48-f7ab-4295-baf8-534fe6aae6af" />
+      <TestMethod codeBase="D:\OneDrive - Constellation HomeBuilder Systems\Automation\AutomationDemo\bin\Debug\AutomationDemo.dll" adapterTypeName="executor://mstestadapter/v2" className="AutomationDemo.PracticeAutomation.ProductPurchase.ProductPurchasePageTestCases" name="TC01_AddToCart" />
     </UnitTest>
-    <UnitTest name="TC03_SignUp (Data Row 1)" storage="c:\users\atif\desktop\automationdemo\bin\debug\automationdemo.dll" id="69ca4373-12dd-490c-90ee-414fd3ff0235">
+    <UnitTest name="TC02_SignUp (Data Row 0)" storage="d:\onedrive - constellation homebuilder systems\automation\automationdemo\bin\debug\automationdemo.dll" id="0f29ebf7-6c40-4f62-bcc0-ec068d10955b">
       <TestCategory>
-        <TestCategoryItem TestCategory="CSV" />
+        <TestCategoryItem TestCategory="Positive" />
         <TestCategoryItem TestCategory="SignUp" />
+        <TestCategoryItem TestCategory="XML" />
       </TestCategory>
-      <Execution id="a8a189e1-a139-4984-802d-d54b46d26e37" />
-      <TestMethod codeBase="C:\Users\Atif\Desktop\AutomationDemo\bin\Debug\AutomationDemo.dll" adapterTypeName="executor://mstestadapter/v2" className="AutomationDemo.PracticeAutomation.SignInSignUp.SignInSignUpPageTestCases" name="TC03_SignUp" />
+      <Execution id="81a6f7b8-8355-4ec1-87c6-3e2f8de8bd2f" />
+      <TestMethod codeBase="D:\OneDrive - Constellation HomeBuilder Systems\Automation\AutomationDemo\bin\Debug\AutomationDemo.dll" adapterTypeName="executor://mstestadapter/v2" className="AutomationDemo.PracticeAutomation.SignInSignUp.SignInSignUpPageTestCases" name="TC02_SignUp" />
     </UnitTest>
-    <UnitTest name="TC03_SignUp (Data Row 3)" storage="c:\users\atif\desktop\automationdemo\bin\debug\automationdemo.dll" id="0050818e-ddfc-4b00-883f-13c5defe8aa7">
+    <UnitTest name="TC01_SignIn (Data Row 0)" storage="d:\onedrive - constellation homebuilder systems\automation\automationdemo\bin\debug\automationdemo.dll" id="da23e95c-1674-447f-baaf-0274abfc6ed4">
       <TestCategory>
-        <TestCategoryItem TestCategory="CSV" />
-        <TestCategoryItem TestCategory="SignUp" />
+        <TestCategoryItem TestCategory="Positive" />
+        <TestCategoryItem TestCategory="SignIn" />
+        <TestCategoryItem TestCategory="XML" />
       </TestCategory>
-      <Execution id="81062d08-a620-4983-be33-9a79cfbc2888" />
-      <TestMethod codeBase="C:\Users\Atif\Desktop\AutomationDemo\bin\Debug\AutomationDemo.dll" adapterTypeName="executor://mstestadapter/v2" className="AutomationDemo.PracticeAutomation.SignInSignUp.SignInSignUpPageTestCases" name="TC03_SignUp" />
+      <Execution id="69b16eb4-5abd-45ba-acba-77f4670774ee" />
+      <TestMethod codeBase="D:\OneDrive - Constellation HomeBuilder Systems\Automation\AutomationDemo\bin\Debug\AutomationDemo.dll" adapterTypeName="executor://mstestadapter/v2" className="AutomationDemo.PracticeAutomation.SignInSignUp.SignInSignUpPageTestCases" name="TC01_SignIn" />
     </UnitTest>
-    <UnitTest name="TC03_SignUp (Data Row 4)" storage="c:\users\atif\desktop\automationdemo\bin\debug\automationdemo.dll" id="f45cc9a7-9d9f-4e51-bb03-cc4915119ffd">
+    <UnitTest name="TC01_SearchProduct (Data Row 0)" storage="d:\onedrive - constellation homebuilder systems\automation\automationdemo\bin\debug\automationdemo.dll" id="1315cfe7-2258-4ddf-8901-b13d3cd1d8f9">
       <TestCategory>
-        <TestCategoryItem TestCategory="CSV" />
-        <TestCategoryItem TestCategory="SignUp" />
+        <TestCategoryItem TestCategory="SearchProduct" />
+        <TestCategoryItem TestCategory="XML" />
+        <TestCategoryItem TestCategory="Positive" />
       </TestCategory>
-      <Execution id="c9398505-bec8-4ab3-ad3d-56be9860e213" />
-      <TestMethod codeBase="C:\Users\Atif\Desktop\AutomationDemo\bin\Debug\AutomationDemo.dll" adapterTypeName="executor://mstestadapter/v2" className="AutomationDemo.PracticeAutomation.SignInSignUp.SignInSignUpPageTestCases" name="TC03_SignUp" />
+      <Execution id="65c2c315-09d7-472e-8c1d-8e5e548195cf" />
+      <TestMethod codeBase="D:\OneDrive - Constellation HomeBuilder Systems\Automation\AutomationDemo\bin\Debug\AutomationDemo.dll" adapterTypeName="executor://mstestadapter/v2" className="AutomationDemo.PracticeAutomation.ProductSearch.ProductSearchPageTestCases" name="TC01_SearchProduct" />
     </UnitTest>
   </TestDefinitions>
   <TestEntries>
-    <TestEntry testId="eda28b58-9264-4e7d-b68a-ff1377252515" executionId="054a00ea-8ca6-4d5c-8ce1-1013343dee0c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="f45cc9a7-9d9f-4e51-bb03-cc4915119ffd" executionId="c9398505-bec8-4ab3-ad3d-56be9860e213" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="69ca4373-12dd-490c-90ee-414fd3ff0235" executionId="a8a189e1-a139-4984-802d-d54b46d26e37" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="8a1b86d8-634a-45bf-9c69-e41ea63a817d" executionId="fc79521d-cea7-41cf-b172-83a029a74611" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="0050818e-ddfc-4b00-883f-13c5defe8aa7" executionId="81062d08-a620-4983-be33-9a79cfbc2888" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0f29ebf7-6c40-4f62-bcc0-ec068d10955b" executionId="81a6f7b8-8355-4ec1-87c6-3e2f8de8bd2f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="da23e95c-1674-447f-baaf-0274abfc6ed4" executionId="69b16eb4-5abd-45ba-acba-77f4670774ee" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c67998b5-44df-4ade-811f-00f2f5a17fc7" executionId="e3545f48-f7ab-4295-baf8-534fe6aae6af" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c6658c29-7c9c-4f1c-8fa6-614018c30d2c" executionId="60032d9f-aef5-49d8-9b04-5d79c538bfe3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1315cfe7-2258-4ddf-8901-b13d3cd1d8f9" executionId="65c2c315-09d7-472e-8c1d-8e5e548195cf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
   </TestEntries>
   <TestLists>
     <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />

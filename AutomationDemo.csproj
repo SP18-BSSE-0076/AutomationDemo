@@ -78,8 +78,6 @@
     <Compile Include="PracticeAutomation\ProductSearch\ProductSearchPageTestCases.cs" />
     <Compile Include="PracticeAutomation\SignInSignUp\SignInSignUpPageLocators.cs" />
     <Compile Include="PracticeAutomation\SignInSignUp\SignInSignUpPageTestCases.cs" />
-    <Compile Include="TestClasses.cs" />
-    <Compile Include="TestExecution.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PracticeAutomation\SignInSignUp\SignInSignUpPage.cs" />
   </ItemGroup>

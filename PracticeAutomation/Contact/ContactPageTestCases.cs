@@ -19,6 +19,20 @@ namespace AutomationDemo.PracticeAutomation.Contact
             get { return instance; }
         }
 
+        [TestInitialize()]
+        public void TestInit()
+        {
+            SeleniumInitialization("Chrome", "http://automationpractice.com/index.php");
+        }
+
+        [TestCleanup()]
+        public void TestCleanUp()
+        {
+            driver.Close();
+            driver.Quit();
+            driver.Dispose();
+        }
+
         //[AssemblyInitialize()]
         //public static void TestInit(TestContext context)
         //{
@@ -38,11 +52,21 @@ namespace AutomationDemo.PracticeAutomation.Contact
         ContactPage contactPage = new ContactPage();
         #endregion
 
-        #region Test Case for ( Contact Form )
-        [TestMethod, TestCategory("ContactForm")]
-        public void TC05_ContactForm()
+        #region Test Case for ( Contact Form ) using datasource in XML Format
+        [TestMethod, TestCategory("ContactForm"), TestCategory("Positive"), TestCategory("XML")]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", @"D:\OneDrive - Constellation HomeBuilder Systems\Automation\AutomationDemo\Data\data.xml", "ContactForm", DataAccessMethod.Sequential)]
+        public void TC01_ContactForm()
         {
-            contactPage.ContactForm("rknight943@gmail.com", "525", "Hi I'm Chuky, wanna play?", "D:\\OneDrive - Constellation HomeBuilder Systems\\Desktop\\Login File.txt");
+            #region Read data from datasource
+            string email = TestContext.DataRow["email"].ToString();
+            string orderRef = TestContext.DataRow["orderReference"].ToString();
+            string message = TestContext.DataRow["message"].ToString();
+            string filePath = TestContext.DataRow["filePath"].ToString();
+            #endregion
+
+            #region Method calling
+            contactPage.ContactForm(email,orderRef,message,filePath);
+            #endregion
         }
         #endregion
     }

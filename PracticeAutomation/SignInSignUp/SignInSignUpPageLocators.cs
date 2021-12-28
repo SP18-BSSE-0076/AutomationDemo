@@ -29,6 +29,8 @@ namespace AutomationDemo.PracticeAutomation.SignInSignUp
         By lastNameTxt = By.Name("lastname");
         By addressTxt = By.Name("address1");
         By cityTxt = By.Name("city");
+        By stateSelect = By.Id("id_state");
+        By countrySelect = By.Name("id_country");
         By postCodeTxt = By.Name("postcode");
         By mobileNoTxt = By.Name("phone_mobile");
         By addressReferenceTxt = By.Name("alias");

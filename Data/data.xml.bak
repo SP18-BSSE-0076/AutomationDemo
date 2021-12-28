@@ -1,30 +1,40 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Prototype>
-	<Execution>
+<execution>
+	<SignIn>
+		<email>rknigh@gmail.com</email>
+		<password>abc123</password>
+	</SignIn>
 	
-		<AutomationPracticeUsingDataSource>
-			<email>rknight@gmail.com</email>
-			<firstName>Muhammad</firstName>
-			<lastName>Atif</lastName>
-			<password>abc123</password>
-			<address>R-378 Sector 15-A-4</address>
-			<city>Karachi</city>
-			<postalCode>74600</postalCode>
-			<mobileNo>+923232734362</mobileNo>
-			<addressForFuture>i dont know</addressForFuture>
-		</AutomationPracticeUsingDataSource>
-		
-		<AutomationPracticeUsingDataSource>
-			<email>rknight@gmail.com</email>
-			<firstName>Muhammad</firstName>
-			<lastName>Atif</lastName>
-			<password>abc123</password>
-			<address>R-378 Sector 15-A-4</address>
-			<city>Karachi</city>
-			<postalCode>74600</postalCode>
-			<mobileNo>+923232734362</mobileNo>
-			<addressForFuture>i dont know</addressForFuture>
-		</AutomationPracticeUsingDataSource>
-		
-	</Execution>
-</Prototype>
+	<SignUp>
+		<email>rknigh@gmail.com</email>
+		<firstName>Muhammad</firstName>
+		<lastName>Atif</lastName>
+		<password>abc123</password>
+		<address>R-378 Sector 15-A-4</address>
+		<city>Karachi</city>
+		<state>Alaska</state>
+		<postalCode>74600</postalCode>
+		<country>United States</country>
+		<mobileNo>+923232734362</mobileNo>
+		<addressForFuture>i dont know</addressForFuture>
+	</SignUp>
+	
+	<SearchProduct>
+		<searchText>t-shirts</searchText>
+	</SearchProduct>
+	
+	<ProductPurchase>
+		<quantity>5</quantity>
+		<size>M</size>
+		<color>Blue</color>
+	</ProductPurchase>
+	
+	<ContactForm>
+		<email>rknight943@gmail.com</email>
+		<orderRef>525</orderRef>
+		<message>Hi I'm Chuky, wanna play?</message>
+		<filePath>D:\\OneDrive - Constellation HomeBuilder Systems\\Desktop\\Login File.txt</filePath>
+	</ContactForm>
+	
+</execution>
+
