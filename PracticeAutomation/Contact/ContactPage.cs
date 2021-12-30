@@ -11,12 +11,12 @@ namespace AutomationDemo.PracticeAutomation.Contact
 {
     public partial class ContactPage : CorePage
     {
-        public void ContactForm(string email, string orderRef, string message , string filePath)
+        public void ContactForm(string subjectHeading , string email, string orderRef, string message , string filePath)
         {
             driver.FindElement(contactLinkButton).Click();
 
             SelectElement selectSubjectHeading = new SelectElement(driver.FindElement(By.Id("id_contact")));
-            selectSubjectHeading.SelectByText("Customer service");
+            selectSubjectHeading.SelectByText(subjectHeading);
             driver.FindElement(emailTxt).SendKeys(email);
             driver.FindElement(orderRefTxt).SendKeys(orderRef);
             driver.FindElement(filePathTxt).SendKeys(filePath);

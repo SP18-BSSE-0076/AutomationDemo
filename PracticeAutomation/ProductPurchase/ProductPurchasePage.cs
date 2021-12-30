@@ -24,10 +24,13 @@ namespace AutomationDemo.PracticeAutomation.ProductPurchase
             }
         }
 
-        public void AddItemToCart(string quanity , string size , string color )
+        public void AddItemToCart(string quanity, string size, string color)
         {
-            
             Actions action = new Actions(driver);
+
+            //explicit wait
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
+            IWebElement SearchResult = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(moveToProduct));
 
             action.MoveToElement(driver.FindElement(moveToProduct)).Perform();
             driver.FindElement(moreButton).Click();

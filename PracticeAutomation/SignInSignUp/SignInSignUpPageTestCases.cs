@@ -18,34 +18,6 @@ namespace AutomationDemo.PracticeAutomation.SignInSignUp
             set { instance = value; }
             get { return instance; }
         }
-
-        [TestInitialize()]
-        public void TestInit()
-        {
-            SeleniumInitialization("Chrome", "http://automationpractice.com/index.php");
-        }
-
-        [TestCleanup()]
-        public void TestCleanUp()
-        {
-            driver.Close();
-            driver.Quit();
-            driver.Dispose();
-        }
-
-        //[AssemblyInitialize()]
-        //public static void TestInit(TestContext context)
-        //{
-        //    SeleniumInitialization("Chrome", "http://automationpractice.com/index.php");
-        //}
-
-        //[AssemblyCleanup()]
-        //public static void TestCleanUp()
-        //{
-        //    driver.Close();
-        //    driver.Quit();
-        //    driver.Dispose();
-        //}
         #endregion
 
         #region Objects Creations
@@ -64,6 +36,7 @@ namespace AutomationDemo.PracticeAutomation.SignInSignUp
 
             #region Method calling
             signInSignUpPage.SignIn(email,password);
+            signInSignUpPage.SignOut();
             #endregion
         }
         #endregion

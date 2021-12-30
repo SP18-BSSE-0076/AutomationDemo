@@ -18,34 +18,6 @@ namespace AutomationDemo.PracticeAutomation.ProductPurchase
             set { instance = value; }
             get { return instance; }
         }
-
-        [TestInitialize()]
-        public void TestInit()
-        {
-            SeleniumInitialization("Chrome", "http://automationpractice.com/index.php");
-        }
-
-        [TestCleanup()]
-        public void TestCleanUp()
-        {
-            driver.Close();
-            driver.Quit();
-            driver.Dispose();
-        }
-
-        //[AssemblyInitialize()]
-        //public static void TestInit(TestContext context)
-        //{
-        //    SeleniumInitialization("Chrome", "http://automationpractice.com/index.php");
-        //}
-
-        //[AssemblyCleanup()]
-        //public static void TestCleanUp()
-        //{
-        //    driver.Close();
-        //    driver.Quit();
-        //    driver.Dispose();
-        //}
         #endregion
 
         #region Objects Creations
@@ -55,7 +27,7 @@ namespace AutomationDemo.PracticeAutomation.ProductPurchase
         #region Test Case for ( Adding an item to cart ) using datasource in XML Format
         [TestMethod, TestCategory("AddToCart"), TestCategory("Positive"), TestCategory("XML")]
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", @"D:\OneDrive - Constellation HomeBuilder Systems\Automation\AutomationDemo\Data\data.xml", "ProductPurchase", DataAccessMethod.Sequential)]
-        public void TC01_AddToCart()
+        public void TC04_AddToCart()
         {
             #region Read data from datasource
             string quantity = TestContext.DataRow["quantity"].ToString();
