@@ -1,7 +1,7 @@
 @ECHO OFF
 ECHO Demo Automation Execution Started.
 
-set testcategory=XML
+set testcategory=MSSQL
 set dllpath=D:\OneDrive - Constellation HomeBuilder Systems\Automation\AutomationDemo\bin\Debug\AutomationDemo.dll
 set trxerpath=D:\OneDrive - Constellation HomeBuilder Systems\Automation\AutomationDemo\bin\Debug
 set reportpath=D:\OneDrive - Constellation HomeBuilder Systems\Automation\AutomationDemo\Reporting

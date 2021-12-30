@@ -104,5 +104,37 @@ namespace AutomationDemo.PracticeAutomation.SignInSignUp
             #endregion
         }
         #endregion
+
+        #region Test Case for ( SignUp ) using MSSQL as datasource 
+        [TestMethod, TestCategory("SignUp"), TestCategory("Positive"), TestCategory("MSSQL")]
+        [DataSource("System.Data.SqlClient", "Data Source=.\\KNIGHT;Initial Catalog=DataDrivenTesting;Integrated Security=True", "SignUp", DataAccessMethod.Sequential)]
+        public void TC04_SignUp()
+        {
+            #region Read data from datasource
+            string email = TestContext.DataRow["email"].ToString();
+            string firstName = TestContext.DataRow["firstName"].ToString();
+            string lastName = TestContext.DataRow["lastName"].ToString();
+            string password = TestContext.DataRow["password"].ToString();
+            string address = TestContext.DataRow["address"].ToString();
+            string city = TestContext.DataRow["city"].ToString();
+            string state = TestContext.DataRow["state"].ToString();
+            string postalCode = TestContext.DataRow["postalCode"].ToString();
+            string country = TestContext.DataRow["country"].ToString();
+            string mobileNo = TestContext.DataRow["mobileNo"].ToString();
+            string addressForFuture = TestContext.DataRow["addressForFuture"].ToString();
+            #endregion
+
+            #region This code is use to get unique email every time 
+            string emailBeforeChar = email.Substring(0, email.IndexOf("@"));
+            string emailAfterChar = email.Substring(email.IndexOf("@") + 1);
+            email = emailBeforeChar + DateTime.Now.Ticks.ToString() + "@" + emailAfterChar;
+            #endregion
+
+            #region Method calling
+            signInSignUpPage.SignUp(email, firstName, lastName, password, address, city, state, postalCode, country, mobileNo, addressForFuture);
+            signInSignUpPage.SignOut();
+            #endregion
+        }
+        #endregion
     }
 }
