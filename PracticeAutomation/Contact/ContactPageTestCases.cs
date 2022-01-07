@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace AutomationDemo.PracticeAutomation.Contact
@@ -47,6 +48,7 @@ namespace AutomationDemo.PracticeAutomation.Contact
 
             #region Method calling
             contactPage.ContactForm(subjectHeading, email, orderRef, message, filePath);
+            Thread.Sleep(5000);
             #endregion
         }
         #endregion
