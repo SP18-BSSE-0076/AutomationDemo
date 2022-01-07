@@ -4,9 +4,13 @@
 		<email>rknigh@gmail.com</email>
 		<password>abc123</password>
 	</SignIn>
+	<SignIn>
+		<email>rknigh@gmail.com</email>
+		<password>abc123</password>
+	</SignIn>
 	
 	<SignUp>
-		<email>rknigh@gmail.com</email>
+		<email>rknight@gmail.com</email>
 		<firstName>Muhammad</firstName>
 		<lastName>Atif</lastName>
 		<password>abc123</password>
@@ -30,6 +34,7 @@
 	</ProductPurchase>
 	
 	<ContactForm>
+		<subjectHeading>Customer service</subjectHeading>
 		<email>rknight943@gmail.com</email>
 		<orderReference>525</orderReference>
 		<message>Hi I'm Chuky, wanna play?</message>

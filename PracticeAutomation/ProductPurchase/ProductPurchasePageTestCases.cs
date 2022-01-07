@@ -20,13 +20,21 @@ namespace AutomationDemo.PracticeAutomation.ProductPurchase
         }
         #endregion
 
+        #region Variables
+        public const string ConnectionString = "Data Source=CRKRL-ATIFFMUH1\\KNIGHT;Initial Catalog=DataDrivenTesting;Integrated Security=True";
+        public const string DataSourceMSSQL = "System.Data.SqlClient";
+        public const string DataSourceXML = "Microsoft.VisualStudio.TestTools.DataSource.XML";
+        public const string DataSourceCSV = "Microsoft.VisualStudio.TestTools.DataSource.CSV";
+        public const string FilePath = "D:\\OneDrive - Constellation HomeBuilder Systems\\Automation\\AutomationDemo\\Data\\";
+        #endregion
+
         #region Objects Creations
         ProductPurchasePage productPurchasePage = new ProductPurchasePage();
         #endregion
 
         #region Test Case for ( Adding an item to cart ) using datasource in XML Format
         [TestMethod, TestCategory("AddToCart"), TestCategory("Positive"), TestCategory("XML")]
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", @"D:\OneDrive - Constellation HomeBuilder Systems\Automation\AutomationDemo\Data\data.xml", "ProductPurchase", DataAccessMethod.Sequential)]
+        [DataSource(DataSourceXML, FilePath + "data.xml", "ProductPurchase", DataAccessMethod.Sequential)]
         public void TC04_AddToCart()
         {
             #region Read data from datasource

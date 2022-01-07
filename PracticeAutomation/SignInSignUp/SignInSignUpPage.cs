@@ -20,6 +20,7 @@ namespace AutomationDemo.PracticeAutomation.SignInSignUp
         {
             driver.FindElement(loginButton).Click();
             driver.FindElement(emailTxt).SendKeys(email);
+            ((ITakesScreenshot)driver).GetScreenshot().SaveAsFile("Test.png", ScreenshotImageFormat.Png);
             driver.FindElement(passwordTxt).SendKeys(password);
             driver.FindElement(submitButton).Click();
 

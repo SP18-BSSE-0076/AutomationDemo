@@ -20,13 +20,21 @@ namespace AutomationDemo.PracticeAutomation.Contact
         }
         #endregion
 
+        #region Variables
+        public const string ConnectionString = "Data Source=CRKRL-ATIFFMUH1\\KNIGHT;Initial Catalog=DataDrivenTesting;Integrated Security=True";
+        public const string DataSourceMSSQL = "System.Data.SqlClient";
+        public const string DataSourceXML = "Microsoft.VisualStudio.TestTools.DataSource.XML";
+        public const string DataSourceCSV = "Microsoft.VisualStudio.TestTools.DataSource.CSV";
+        public const string FilePath = "D:\\OneDrive - Constellation HomeBuilder Systems\\Automation\\AutomationDemo\\Data\\";
+        #endregion
+
         #region Objects Creations
         ContactPage contactPage = new ContactPage();
         #endregion
 
         #region Test Case for ( Contact Form ) using datasource in XML Format
         [TestMethod, TestCategory("ContactForm"), TestCategory("Positive"), TestCategory("XML")]
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", @"D:\OneDrive - Constellation HomeBuilder Systems\Automation\AutomationDemo\Data\data.xml", "ContactForm", DataAccessMethod.Sequential)]
+        [DataSource(DataSourceXML, FilePath + "data.xml", "ContactForm", DataAccessMethod.Sequential)]
         public void TC05_ContactForm()
         {
             #region Read data from datasource

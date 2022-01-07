@@ -6,7 +6,7 @@
 	</SignIn>
 	
 	<SignUp>
-		<email>rknigh@gmail.com</email>
+		<email>rknight@gmail.com</email>
 		<firstName>Muhammad</firstName>
 		<lastName>Atif</lastName>
 		<password>abc123</password>
@@ -18,7 +18,7 @@
 		<mobileNo>+923232734362</mobileNo>
 		<addressForFuture>i dont know</addressForFuture>
 	</SignUp>
-	
+
 	<SearchProduct>
 		<searchText>t-shirts</searchText>
 	</SearchProduct>
