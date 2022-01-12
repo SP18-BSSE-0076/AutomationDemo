@@ -16,9 +16,53 @@ namespace AutomationDemo.PracticeAutomation.SignInSignUp
     {
         WebDriverWait wait;
 
+        #region DeadCode
+        //public void EnterText(By by, string setValue, int timeToReadyElement = 0)
+        //{
+        //    try // Locate Element
+        //    {
+        //        // var element = WaitforElement(by, timeToReadyElement);
+        //        var element = driver.FindElement(by);
+        //        element.SendKeys(setValue);
+        //    }
+        //    catch (Exception ex)
+        //    { }
+        //}
+        //public void Click(By by, int timeToReadyElement = 0)
+        //{
+        //    try // Locate Element
+        //    {
+        //        var element = WaitforElement(by, timeToReadyElement);
+        //        element.Click();
+        //    }
+        //    catch (Exception ex) // Element Not found
+        //    { }
+        //}
+        //public IWebElement WaitforElement(By by, int timeToReadyElement = 0)
+        //{
+        //    IWebElement element = null;
+        //    try
+        //    {
+        //        if (timeToReadyElement != 0 && timeToReadyElement.ToString() != null)
+        //        {
+        //            PlaybackWait(timeToReadyElement * 1000);
+        //        }
+        //        element = driver.FindElement(by);
+        //    }
+        //    catch
+        //    {
+        //        WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(MaxTimeToFindElement));
+        //        wait.Until(driver => IsPageReady(driver) == true && IsElementVisible(by) == true && IsClickable(by) == true);
+        //        element = driver.FindElement(by);
+        //    }
+        //    return element;
+        //}
+        #endregion
+
         public void SignIn(string email, string password)
         {
             driver.FindElement(loginButton).Click();
+            //EnterText(emailTxt, email , 0);
             driver.FindElement(emailTxt).SendKeys(email);
             ((ITakesScreenshot)driver).GetScreenshot().SaveAsFile("Test.png", ScreenshotImageFormat.Png);
             driver.FindElement(passwordTxt).SendKeys(password);
@@ -31,11 +75,11 @@ namespace AutomationDemo.PracticeAutomation.SignInSignUp
 
             if (actual == expected)
             {
-                MessageBox.Show("Login Successfull");
+                //MessageBox.Show("Login Successfull");
             }
             else
             {
-                MessageBox.Show("Login Failed");
+                //MessageBox.Show("Login Failed");
             }
         }
 

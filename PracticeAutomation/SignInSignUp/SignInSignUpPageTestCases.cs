@@ -17,7 +17,7 @@ using System.Data.SqlClient;
 namespace AutomationDemo.PracticeAutomation.SignInSignUp
 {
     [TestClass]
-    public class SignInSignUpPageTestCases : CorePage
+    public partial class SignInSignUpPage
     {
         #region Setup and Cleanup
         public TestContext instance;
@@ -38,7 +38,6 @@ namespace AutomationDemo.PracticeAutomation.SignInSignUp
 
         #region Objects Creations
         SqlConnection con = new SqlConnection("Data Source=CRKRL-ATIFFMUH1\\KNIGHT;Initial Catalog=DataDrivenTesting;Integrated Security=True");
-        SignInSignUpPage signInSignUpPage = new SignInSignUpPage();
         #endregion
 
         #region Test Case for ( SignIn ) using datasource in XML Format
@@ -52,8 +51,8 @@ namespace AutomationDemo.PracticeAutomation.SignInSignUp
             #endregion
 
             #region Method calling
-            signInSignUpPage.SignIn(email,password);
-            signInSignUpPage.SignOut();
+            SignIn(email,password);
+            SignOut();
             #endregion
         }
         #endregion
@@ -84,8 +83,8 @@ namespace AutomationDemo.PracticeAutomation.SignInSignUp
             #endregion
 
             #region Method calling
-            signInSignUpPage.SignUp(email, firstName, lastName, password, address, city, state , postalCode, country , mobileNo, addressForFuture);
-            signInSignUpPage.SignOut();
+            SignUp(email, firstName, lastName, password, address, city, state , postalCode, country , mobileNo, addressForFuture);
+            SignOut();
             #endregion
         }
         #endregion
@@ -116,8 +115,8 @@ namespace AutomationDemo.PracticeAutomation.SignInSignUp
             #endregion
 
             #region Method calling
-            signInSignUpPage.SignUp(email, firstName, lastName, password, address, city, state, postalCode, country, mobileNo, addressForFuture);
-            signInSignUpPage.SignOut();
+            SignUp(email, firstName, lastName, password, address, city, state, postalCode, country, mobileNo, addressForFuture);
+            SignOut();
             #endregion
         }
         #endregion
@@ -148,30 +147,30 @@ namespace AutomationDemo.PracticeAutomation.SignInSignUp
             #endregion
 
             #region Method calling
-            signInSignUpPage.SignUp(email, firstName, lastName, password, address, city, state, postalCode, country, mobileNo, addressForFuture);
-            signInSignUpPage.SignOut();
+            SignUp(email, firstName, lastName, password, address, city, state, postalCode, country, mobileNo, addressForFuture);
+            SignOut();
             #endregion
         }
         #endregion
 
-        #region Test Case for ( SignIn ) using datasource in Excel Format
-        [TestMethod, TestCategory("SignIn"), TestCategory("Positive"), TestCategory("Excel")]
-        [DynamicData(nameof(ReadExcel),DynamicDataSourceType.Method)]
-        public void TC05_SignIn(string email, string password)
-        {
-            //#region Read data from datasource
-            //string email = TestContext.DataRow["email"].ToString();
-            //string password = TestContext.DataRow["password"].ToString();
-            //#endregion
+        //#region Test Case for ( SignIn ) using datasource in Excel Format
+        //[TestMethod, TestCategory("SignIn"), TestCategory("Positive"), TestCategory("Excel")]
+        //[DynamicData(nameof(ReadExcel),DynamicDataSourceType.Method)]
+        //public void TC05_SignIn(string email, string password)
+        //{
+        //    //#region Read data from datasource
+        //    //string email = TestContext.DataRow["email"].ToString();
+        //    //string password = TestContext.DataRow["password"].ToString();
+        //    //#endregion
 
-            #region Method calling
-            signInSignUpPage.SignIn(email, password);
-            signInSignUpPage.SignOut();
+        //    #region Method calling
+        //    signInSignUpPage.SignIn(email, password);
+        //    signInSignUpPage.SignOut();
 
-            //"//*[@id='homefeatured']/li[2]/div/div[1]/div/a[1]/img"
-            #endregion
-        }
-        #endregion
+        //    //"//*[@id='homefeatured']/li[2]/div/div[1]/div/a[1]/img"
+        //    #endregion
+        //}
+        //#endregion
 
         public static IEnumerable <object[]> ReadExcel()
         {

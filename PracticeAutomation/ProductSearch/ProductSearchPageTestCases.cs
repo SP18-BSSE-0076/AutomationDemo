@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 namespace AutomationDemo.PracticeAutomation.ProductSearch
 {
     [TestClass]
-    public class ProductSearchPageTestCases : CorePage
+    public partial class ProductSearchPage
     {
         #region Setup and Cleanup
         public TestContext instance;
@@ -29,7 +30,7 @@ namespace AutomationDemo.PracticeAutomation.ProductSearch
         #endregion
 
         #region Objects Creations
-        ProductSearchPage productSearchPage = new ProductSearchPage();
+        SqlConnection con = new SqlConnection("Data Source=CRKRL-ATIFFMUH1\\KNIGHT;Initial Catalog=DataDrivenTesting;Integrated Security=True");
         #endregion
 
         #region Test Case for ( Search any product ) using datasource in XML Format
@@ -42,7 +43,7 @@ namespace AutomationDemo.PracticeAutomation.ProductSearch
             #endregion
 
             #region Method calling
-            productSearchPage.SearchItem(searchText);
+            SearchItem(searchText);
             #endregion
         }
         #endregion

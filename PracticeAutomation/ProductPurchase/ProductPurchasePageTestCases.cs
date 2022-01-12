@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 namespace AutomationDemo.PracticeAutomation.ProductPurchase
 {
     [TestClass]
-    public class ProductPurchasePageTestCases : CorePage
+    public partial class ProductPurchasePage
     {
         #region Setup and Cleanup
         public TestContext instance;
@@ -29,7 +30,7 @@ namespace AutomationDemo.PracticeAutomation.ProductPurchase
         #endregion
 
         #region Objects Creations
-        ProductPurchasePage productPurchasePage = new ProductPurchasePage();
+        SqlConnection con = new SqlConnection("Data Source=CRKRL-ATIFFMUH1\\KNIGHT;Initial Catalog=DataDrivenTesting;Integrated Security=True");
         #endregion
 
         #region Test Case for ( Adding an item to cart ) using datasource in XML Format
@@ -44,7 +45,7 @@ namespace AutomationDemo.PracticeAutomation.ProductPurchase
             #endregion
 
             #region Method calling
-            productPurchasePage.AddItemToCart(quantity,size,color);
+            AddItemToCart(quantity,size,color);
             #endregion
         }
         #endregion

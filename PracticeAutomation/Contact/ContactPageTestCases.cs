@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 namespace AutomationDemo.PracticeAutomation.Contact
 {
     [TestClass]
-    public class ContactPageTestCases : CorePage
+    public partial class ContactPage
     {
         #region Setup and Cleanup
         public TestContext instance;
@@ -30,7 +31,7 @@ namespace AutomationDemo.PracticeAutomation.Contact
         #endregion
 
         #region Objects Creations
-        ContactPage contactPage = new ContactPage();
+        SqlConnection con = new SqlConnection("Data Source=CRKRL-ATIFFMUH1\\KNIGHT;Initial Catalog=DataDrivenTesting;Integrated Security=True");
         #endregion
 
         #region Test Case for ( Contact Form ) using datasource in XML Format
@@ -47,7 +48,7 @@ namespace AutomationDemo.PracticeAutomation.Contact
             #endregion
 
             #region Method calling
-            contactPage.ContactForm(subjectHeading, email, orderRef, message, filePath);
+            ContactForm(subjectHeading, email, orderRef, message, filePath);
             Thread.Sleep(5000);
             #endregion
         }
