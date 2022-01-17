@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <execution>
 	<SignIn>
-		<email>rknigh@gmail.com</email>
+		<email>rknight12345@gmail.com</email>
 		<password>abc123</password>
 	</SignIn>
+	
+	<SignInTwo>
+		<email>rknight12345@gmail.com</email>
+		<password>abc123</password>
+	</SignInTwo>
 	
 	<SignUp>
 		<email>rknight@gmail.com</email>

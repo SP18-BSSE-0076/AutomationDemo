@@ -57,6 +57,40 @@ namespace AutomationDemo.PracticeAutomation.SignInSignUp
         }
         #endregion
 
+        #region Test Case for ( SignIn ) using datasource in XML Format
+        [TestMethod, TestCategory("SignIn"), TestCategory("Positive"), TestCategory("XML")]
+        [DataSource(DataSourceXML, FilePath + "data.xml", "SignIn", DataAccessMethod.Sequential)]
+        public void TC010_SignIn()
+        {
+            #region Read data from datasource
+            string email = TestContext.DataRow["email"].ToString();
+            string password = TestContext.DataRow["password"].ToString();
+            #endregion
+
+            #region Method calling
+            SignIn(email, password);
+            SignOut();
+            #endregion
+        }
+        #endregion
+
+        #region Test Case for ( SignIn ) using datasource in XML Format
+        [TestMethod, TestCategory("SignInTwo"), TestCategory("Positive"), TestCategory("XML")]
+        [DataSource(DataSourceXML, FilePath + "data.xml", "SignIn", DataAccessMethod.Sequential)]
+        public void TC011_SignIn()
+        {
+            #region Read data from datasource
+            string email = TestContext.DataRow["email"].ToString();
+            string password = TestContext.DataRow["password"].ToString();
+            #endregion
+
+            #region Method calling
+            SignIn(email, password);
+            SignOut();
+            #endregion
+        }
+        #endregion
+
         #region Test Case for ( SignUp ) using datasource in XML Format
         [TestMethod, TestCategory("SignUp"), TestCategory("Positive"), TestCategory("XML")]
         [DataSource(DataSourceXML, FilePath + "data.xml", "SignUp", DataAccessMethod.Sequential)]
