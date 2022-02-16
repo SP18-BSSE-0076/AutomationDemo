@@ -26,7 +26,7 @@ namespace AutomationDemo.PracticeAutomation.ProductPurchase
         public const string DataSourceMSSQL = "System.Data.SqlClient";
         public const string DataSourceXML = "Microsoft.VisualStudio.TestTools.DataSource.XML";
         public const string DataSourceCSV = "Microsoft.VisualStudio.TestTools.DataSource.CSV";
-        public const string FilePath = "D:\\OneDrive - Constellation HomeBuilder Systems\\Automation\\AutomationDemo\\Data\\";
+        public const string FilePath = "D:\\OneDrive - Constellation HomeBuilder Systems\\Automation\\AutomationDemo\\Data\\data.xml";
         #endregion
 
         #region Objects Creations
@@ -35,7 +35,7 @@ namespace AutomationDemo.PracticeAutomation.ProductPurchase
 
         #region Test Case for ( Adding an item to cart ) using datasource in XML Format
         [TestMethod, TestCategory("AddToCart"), TestCategory("Positive"), TestCategory("XML")]
-        [DataSource(DataSourceXML, FilePath + "data.xml", "ProductPurchase", DataAccessMethod.Sequential)]
+        [DataSource(DataSourceXML, FilePath, "ProductPurchase", DataAccessMethod.Sequential)]
         public void TC04_AddToCart()
         {
             #region Read data from datasource

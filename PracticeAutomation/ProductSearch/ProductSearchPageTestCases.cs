@@ -26,7 +26,7 @@ namespace AutomationDemo.PracticeAutomation.ProductSearch
         public const string DataSourceMSSQL = "System.Data.SqlClient";
         public const string DataSourceXML = "Microsoft.VisualStudio.TestTools.DataSource.XML";
         public const string DataSourceCSV = "Microsoft.VisualStudio.TestTools.DataSource.CSV";
-        public const string FilePath = "D:\\OneDrive - Constellation HomeBuilder Systems\\Automation\\AutomationDemo\\Data\\";
+        public const string FilePath = "D:\\OneDrive - Constellation HomeBuilder Systems\\Automation\\AutomationDemo\\Data\\data.xml";
         #endregion
 
         #region Objects Creations
@@ -35,7 +35,7 @@ namespace AutomationDemo.PracticeAutomation.ProductSearch
 
         #region Test Case for ( Search any product ) using datasource in XML Format
         [TestMethod, TestCategory("SearchProduct"), TestCategory("Positive"), TestCategory("XML")]
-        [DataSource(DataSourceXML, FilePath + "data.xml", "SearchProduct", DataAccessMethod.Sequential)]
+        [DataSource(DataSourceXML, FilePath, "SearchProduct", DataAccessMethod.Sequential)]
         public void TC03_SearchProduct()
         {
             #region Read data from datasource

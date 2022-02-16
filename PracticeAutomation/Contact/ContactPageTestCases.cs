@@ -27,7 +27,7 @@ namespace AutomationDemo.PracticeAutomation.Contact
         public const string DataSourceMSSQL = "System.Data.SqlClient";
         public const string DataSourceXML = "Microsoft.VisualStudio.TestTools.DataSource.XML";
         public const string DataSourceCSV = "Microsoft.VisualStudio.TestTools.DataSource.CSV";
-        public const string FilePath = "D:\\OneDrive - Constellation HomeBuilder Systems\\Automation\\AutomationDemo\\Data\\";
+        public const string FilePath = "D:\\OneDrive - Constellation HomeBuilder Systems\\Automation\\AutomationDemo\\Data\\data.xml";
         #endregion
 
         #region Objects Creations
@@ -36,7 +36,7 @@ namespace AutomationDemo.PracticeAutomation.Contact
 
         #region Test Case for ( Contact Form ) using datasource in XML Format
         [TestMethod, TestCategory("ContactForm"), TestCategory("Positive"), TestCategory("XML")]
-        [DataSource(DataSourceXML, FilePath + "data.xml", "ContactForm", DataAccessMethod.Sequential)]
+        [DataSource(DataSourceXML, FilePath, "ContactForm", DataAccessMethod.Sequential)]
         public void TC05_ContactForm()
         {
             #region Read data from datasource

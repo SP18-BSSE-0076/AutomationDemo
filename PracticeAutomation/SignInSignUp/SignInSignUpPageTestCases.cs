@@ -33,7 +33,7 @@ namespace AutomationDemo.PracticeAutomation.SignInSignUp
         public const string DataSourceMSSQL = "System.Data.SqlClient";
         public const string DataSourceXML = "Microsoft.VisualStudio.TestTools.DataSource.XML";
         public const string DataSourceCSV = "Microsoft.VisualStudio.TestTools.DataSource.CSV";
-        public const string FilePath = "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\github asd asd\\Data\\";
+        public const string FilePath = "D:\\OneDrive - Constellation HomeBuilder Systems\\Automation\\AutomationDemo\\Data\\data.xml";
         #endregion
 
         #region Objects Creations
@@ -42,7 +42,7 @@ namespace AutomationDemo.PracticeAutomation.SignInSignUp
 
         #region Test Case for ( SignIn ) using datasource in XML Format
         [TestMethod, TestCategory("SignIn"), TestCategory("Positive"), TestCategory("XML")]
-        [DataSource(DataSourceXML, FilePath + "data.xml", "SignIn", DataAccessMethod.Sequential)]
+        [DataSource(DataSourceXML, FilePath, "SignIn", DataAccessMethod.Sequential)]
         public void TC01_SignIn()
         {
             #region Read data from datasource
@@ -58,8 +58,8 @@ namespace AutomationDemo.PracticeAutomation.SignInSignUp
         #endregion
 
         #region Test Case for ( SignIn ) using datasource in XML Format
-        [TestMethod, TestCategory("SignIn"), TestCategory("Positive"), TestCategory("XML")]
-        [DataSource(DataSourceXML, FilePath + "data.xml", "SignIn", DataAccessMethod.Sequential)]
+        [TestMethod, TestCategory("SignInNEW"), TestCategory("Positive"), TestCategory("XML")]
+        [DataSource(DataSourceXML, FilePath, "SignIn", DataAccessMethod.Sequential)]
         public void TC010_SignIn()
         {
             #region Read data from datasource
@@ -76,7 +76,7 @@ namespace AutomationDemo.PracticeAutomation.SignInSignUp
 
         #region Test Case for ( SignIn ) using datasource in XML Format
         [TestMethod, TestCategory("SignInTwo"), TestCategory("Positive"), TestCategory("XML")]
-        [DataSource(DataSourceXML, FilePath + "data.xml", "SignIn", DataAccessMethod.Sequential)]
+        [DataSource(DataSourceXML, FilePath, "SignIn", DataAccessMethod.Sequential)]
         public void TC011_SignIn()
         {
             #region Read data from datasource
@@ -93,7 +93,7 @@ namespace AutomationDemo.PracticeAutomation.SignInSignUp
 
         #region Test Case for ( SignUp ) using datasource in XML Format
         [TestMethod, TestCategory("SignUp"), TestCategory("Positive"), TestCategory("XML")]
-        [DataSource(DataSourceXML, FilePath + "data.xml", "SignUp", DataAccessMethod.Sequential)]
+        [DataSource(DataSourceXML, FilePath, "SignUp", DataAccessMethod.Sequential)]
         public void TC02_SignUp()
         {
             #region Read data from datasource
@@ -125,7 +125,7 @@ namespace AutomationDemo.PracticeAutomation.SignInSignUp
 
         #region Test Case for ( SignUp ) using datasource in CSV Format
         [TestMethod, TestCategory("SignUp"), TestCategory("Positive"), TestCategory("CSV")]
-        [DataSource(DataSourceCSV, FilePath + "data.csv", "data#csv", DataAccessMethod.Sequential)]
+        [DataSource(DataSourceCSV, FilePath, "data#csv", DataAccessMethod.Sequential)]
         public void TC03_SignUp()
         {
             #region Read data from datasource
@@ -186,25 +186,6 @@ namespace AutomationDemo.PracticeAutomation.SignInSignUp
             #endregion
         }
         #endregion
-
-        //#region Test Case for ( SignIn ) using datasource in Excel Format
-        //[TestMethod, TestCategory("SignIn"), TestCategory("Positive"), TestCategory("Excel")]
-        //[DynamicData(nameof(ReadExcel),DynamicDataSourceType.Method)]
-        //public void TC05_SignIn(string email, string password)
-        //{
-        //    //#region Read data from datasource
-        //    //string email = TestContext.DataRow["email"].ToString();
-        //    //string password = TestContext.DataRow["password"].ToString();
-        //    //#endregion
-
-        //    #region Method calling
-        //    signInSignUpPage.SignIn(email, password);
-        //    signInSignUpPage.SignOut();
-
-        //    //"//*[@id='homefeatured']/li[2]/div/div[1]/div/a[1]/img"
-        //    #endregion
-        //}
-        //#endregion
 
         public static IEnumerable <object[]> ReadExcel()
         {
